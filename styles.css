@@ -12,7 +12,7 @@ body {
 .header {
   background-color: rgba(22, 34, 57, 0.95);
   position: fixed;
-  z-index: 1000;
+  z-index: 999;
   width: 100%;
   height: 80px;
   display: flex;
@@ -79,6 +79,7 @@ body {
   padding-top: 80px;
   height: 100%;
   width: 100%;
+  z-index: 1000;
 
 }
 
@@ -97,7 +98,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(22, 34, 57, 0.85);
 
 }
 
@@ -128,4 +128,54 @@ body {
   font-weight: 700px;
   letter-spacing: 0.5px;
   font-size: 13px;
+}
+.card{
+  /* position: absolute; */
+  bottom: 0;
+  background-color:  rgba(22, 34, 57, 0.95);
+  color: #fff;
+  padding: 40px;
+  width: 300px;
+}
+.pencil-icon{
+  margin-right: 15px;
+  font-size: 24px;
+}
+.card-text{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.card-hide{
+  display: none;
+  transition: all ease 0.5s;
+}
+.card:hover .card-hide{
+  display: block;
+
+}
+.card:hover{
+  background-color: #f5a425;
+  padding: 10px 40px;
+}
+.d-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* position: absolute; */
+}
+.card-hide p{
+  font-size: 13px;
+
+}
+.btn{
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
+  display:inline-block;
+}
+.card-2{
+  background-color:  rgba(22, 34, 57, 0.95);
+  color: #fff;
+  padding: 40px;
+  width: 300px;
 }

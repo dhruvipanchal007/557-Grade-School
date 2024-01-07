@@ -153,7 +153,6 @@ body {
 }
 .card:hover .card-hide{
   display: block;
-
 }
 .card:hover{
   background-color: #f5a425;

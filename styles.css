@@ -85,11 +85,13 @@ body {
   font-size: 40px;
   color: #fff;
 }
-@media(max-width:990px){
+@media(max-width:1000px){
   #menu-icon{
     display: contents;
   }
   .navbar{
+    position: absolute;
+    top: 80px;
     flex-direction: column;
   }
 }

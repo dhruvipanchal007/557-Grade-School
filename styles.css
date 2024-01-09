@@ -72,13 +72,16 @@ margin: 0;
 .menu-dropdown {
   display: none;
 }
-#check-btn{
+
+#checkbtn{
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: 10px;
 }
-
+#check{
+  display: none;
+}
 
 #close-icon{
   display: none;

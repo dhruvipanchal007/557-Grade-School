@@ -7,7 +7,7 @@ body {
   color: black;
   background-color: white;
   font-size: 16px;
-margin: 0;
+  margin: 0;
 }
 
 .header {
@@ -73,36 +73,40 @@ margin: 0;
   display: none;
 }
 
-#checkbtn{
+#checkbtn {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: 10px;
 }
-#check{
+
+#check {
   display: none;
 }
 
-#close-icon{
+#close-icon {
   display: none;
   font-size: 40px;
   color: #fff;
 }
-#menu-icon{
+
+#menu-icon {
   display: none;
   font-size: 40px;
   color: #fff;
 }
-@media(max-width:1000px){
-  #menu-icon{
+
+@media(max-width:1000px) {
+  #menu-icon {
     display: none
   }
-  #close-icon{
+
+  #close-icon {
     display: block;
   }
-  
 
-  .navbar{
+
+  .navbar {
     position: absolute;
     top: 80px;
     flex-direction: column;
@@ -115,7 +119,8 @@ margin: 0;
 
 
   }
-  #check:checked ~ #checkbtn #menu-icon {
+
+  #check:checked~#checkbtn #menu-icon {
     display: block;
   }
 
@@ -127,34 +132,38 @@ margin: 0;
   #check:checked~.navbar {
     height: 250px;
   }
- 
-  li{
+
+  li {
     width: 100%;
   }
-  .menu{
+
+  .menu {
     width: 100%;
     display: block;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
-    line-height: 1.5;   
-     padding: 15px 0;
-     border: 2px solid transparent;
-     border-bottom: 1px solid rgba(250,250,250,0.25);
-     margin: 0;
+    line-height: 1.5;
+    padding: 15px 0;
+    border: 2px solid transparent;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.25);
+    margin: 0;
 
 
   }
-  .menu:hover{
+
+  .menu:hover {
     color: #f5a425;
   }
-  .active{
+
+  .active {
     color: #f5a425;
   }
-  .logo{
+
+  .logo {
     padding-left: 20px;
   }
-  
+
 }
 
 /* main-banner */
@@ -175,13 +184,17 @@ margin: 0;
   bottom: 10px;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
+}
+
+.image-overlay {
+  height: 100%;
 }
 
 .bg-image {
   top: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
   position: relative;
 }
 
@@ -245,23 +258,27 @@ margin: 0;
   display: none;
   transition: all ease 0.5s;
 }
-@media (max-width:1000px){
-  .text-heading-2{
+
+@media (max-width:1000px) {
+  .text-heading-2 {
     font-size: 50px;
   }
 }
-@media (max-width:762px){
 
-  .text-heading-2{
+@media (max-width:762px) {
+
+  .text-heading-2 {
     font-size: 36px;
   }
-  .text-heading-1{
+
+  .text-heading-1 {
     font-weight: 500;
   }
 }
+
 /* card 1 */
 .card-1 {
-  background-color:#0c1228;
+  background-color: #0c1228;
   color: #fff;
   padding: 40px;
   width: 300px;
@@ -295,7 +312,7 @@ margin: 0;
 
 /* card-3 */
 .card-3 {
-  background-color:#0c1228;
+  background-color: #0c1228;
   color: #fff;
   padding: 40px;
   width: 300px;
@@ -329,18 +346,79 @@ margin: 0;
   text-transform: uppercase;
   display: inline-block;
 }
-@media(max-width:992px){
-  .d-grid{
+
+@media(max-width:992px) {
+  .d-grid {
     grid-template-columns: 1fr;
     width: 100%;
   }
-  .card-1{
+
+  .card-1 {
     width: 100%;
   }
-  .card-2{
+
+  .card-2 {
     width: 100%;
   }
-  .card-3{
+
+  .card-3 {
     width: 100%;
   }
+}
+
+/* section why us */
+.why-us {
+  background-image: url("https://templatemo.com/templates/templatemo_557_grad_school/assets/images/choosing-bg.jpg");
+  background-color: #172238;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.why-us-text {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.why-us-heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.5px;
+  padding: 15px 20px;
+  border: 2px solid rgba(250, 250, 250, 0.1);
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.tabs {
+  text-align: center;
+}
+
+.taglist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #fff;
+  padding: 0 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.tab-icon{
+  padding-top: 10px;
+  font-size: 20px;
 }

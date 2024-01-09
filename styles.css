@@ -104,10 +104,12 @@ margin: 0;
     width: 100%;
     background-color: rgba(22, 34, 57, 0.95);
     padding: 0;
+    height: 0;
+    overflow: hidden;
 
 
   }
-  #check:checked~#checkbtn #menu-icon {
+  #check:checked ~ #checkbtn #menu-icon {
     display: none;
   }
 
@@ -117,7 +119,7 @@ margin: 0;
   }
 
   #check:checked~.navbar {
-    height: 350px;
+    height: 250px;
   }
  
   li{

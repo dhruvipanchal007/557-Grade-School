@@ -412,13 +412,18 @@ li {
   flex-direction: column;
   font-size: 13px;
   color: #fff;
-  padding: 0 20px;
+  padding: 15px 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-bottom: 30px;
 }
 .tab-icon{
-  padding-top: 10px;
+  padding-top: 20px;
+  font-size: 10px;
+  color: #fff;
+}
+.tab-icon-active{
   font-size: 20px;
+  color: #f5a425;
+  padding-top: 10px;
 }

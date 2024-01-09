@@ -92,7 +92,10 @@ margin: 0;
 }
 @media(max-width:1000px){
   #menu-icon{
-    display: block
+    display: none
+  }
+  #close-icon{
+    display: block;
   }
   
 
@@ -110,11 +113,11 @@ margin: 0;
 
   }
   #check:checked ~ #checkbtn #menu-icon {
-    display: none;
+    display: block;
   }
 
   #check:checked~#checkbtn #close-icon {
-    display: block;
+    display: none;
 
   }
 

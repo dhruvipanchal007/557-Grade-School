@@ -91,18 +91,18 @@ body {
 }
 
 #menu-icon {
-  display: none;
+  display:none;
   font-size: 40px;
   color: #fff;
 }
 
 @media(max-width:1000px) {
   #menu-icon {
-    display: none
+    display: block
   }
 
   #close-icon {
-    display: block;
+    display: none;
   }
 
 
@@ -145,7 +145,6 @@ body {
     font-size: 13px;
     line-height: 1.5;
     padding: 15px 0;
-    border: 2px solid transparent;
     border-bottom: 1px solid rgba(250, 250, 250, 0.25);
     margin: 0;
 
@@ -154,6 +153,7 @@ body {
 
   .menu:hover {
     color: #f5a425;
+    border:2px solid transparent;
   }
 
   .active {
@@ -181,10 +181,10 @@ body {
   background-color: rgba(22, 34, 57, 0.85);
   position: absolute;
   top: 80px;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .image-overlay {
@@ -254,7 +254,15 @@ body {
   letter-spacing: 1px;
 }
 
-.card-hide {
+.card-hide-1 {
+  display: none;
+  transition: all ease 0.5s;
+}
+.card-hide-2 {
+  display: none;
+  transition: all ease 0.5s;
+}
+.card-hide-3 {
   display: none;
   transition: all ease 0.5s;
 }
@@ -284,7 +292,7 @@ body {
   width: 300px;
 }
 
-.card-1:hover .card-hide {
+.card-1:hover .card-hide-1 {
   display: block;
 }
 
@@ -301,7 +309,7 @@ body {
   width: 300px;
 }
 
-.card-2:hover .card-hide {
+.card-2:hover .card-hide-2 {
   display: block;
 }
 
@@ -318,21 +326,32 @@ body {
   width: 300px;
 }
 
-.card-3:hover .card-hide {
+.card-3:hover .card-hide-3 {
   display: block;
 }
 
 .card-3:hover {
   background-color: #f5a425;
   padding: 10px 40px;
-}
+} 
 
 .d-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   position: absolute;
-  bottom: 10px;
-  grid-column-gap: 30px;
+  bottom: 5px;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.info-container{
+  display: flex;
+  column-gap: 30px;
+
+
 }
 
 .card-hide p {
@@ -373,6 +392,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .why-us-text {
@@ -404,7 +424,7 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .tag {
@@ -417,13 +437,52 @@ li {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.tab-icon{
+
+.tab-icon {
   padding-top: 20px;
   font-size: 10px;
   color: #fff;
 }
-.tab-icon-active{
+
+.tab-icon-active {
   font-size: 20px;
   color: #f5a425;
   padding-top: 10px;
+}
+
+.tabs-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs-content-image {
+  max-width: 500px;
+  padding: 0;
+  15px
+}
+
+.tabs-content-image img {
+  padding-right: 45px;
+  width: 100%;
+}
+
+.tabs-content-text {
+  max-width: 500px;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.tabs-content-text-heading {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.tabs-content-text-para{
+color: #fff;
+font-size: 15px;
+line-height: 28px;
 }

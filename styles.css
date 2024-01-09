@@ -78,6 +78,9 @@ margin: 0;
   margin-left: auto;
   margin-right: 10px;
 }
+#checkbox:checked ~#checkbtn #menu-icon{
+  display: none;
+}
 #close-icon{
   display: none;
 }

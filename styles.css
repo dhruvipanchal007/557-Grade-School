@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black;
   background-color: white;
   font-size: 16px;
@@ -151,7 +151,12 @@ margin: 0;
   .active{
     color: #f5a425;
   }
+  .logo{
+    padding-left: 20px;
+  }
+  
 }
+
 /* main-banner */
 .main-banner {
 
@@ -189,6 +194,7 @@ margin: 0;
   align-items: center;
   width: 100%;
   height: 100%;
+  text-align: center;
 
 }
 
@@ -198,6 +204,7 @@ margin: 0;
   margin-top: 0;
   letter-spacing: 1px;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .text-heading-2 {
@@ -238,7 +245,20 @@ margin: 0;
   display: none;
   transition: all ease 0.5s;
 }
+@media (max-width:1000px){
+  .text-heading-2{
+    font-size: 50px;
+  }
+}
+@media (max-width:762px){
 
+  .text-heading-2{
+    font-size: 36px;
+  }
+  .text-heading-1{
+    font-weight: 500;
+  }
+}
 /* card 1 */
 .card-1 {
   background-color:#0c1228;
@@ -296,7 +316,6 @@ margin: 0;
   position: absolute;
   bottom: 10px;
   grid-column-gap: 30px;
-  margin-left: 200px;
 }
 
 .card-hide p {
@@ -304,8 +323,24 @@ margin: 0;
 
 }
 
+
 .btn {
   border-bottom: 2px solid #fff;
   text-transform: uppercase;
   display: inline-block;
+}
+@media(max-width:992px){
+  .d-grid{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .card-1{
+    width: 100%;
+  }
+  .card-2{
+    width: 100%;
+  }
+  .card-3{
+    width: 100%;
+  }
 }

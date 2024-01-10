@@ -486,3 +486,140 @@ color: #fff;
 font-size: 15px;
 line-height: 28px;
 }
+/* coming soon */
+.coming-soon{
+ background-image: url("https://templatemo.com/templates/templatemo_557_grad_school/assets/images/coming-soon-bg.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding: 120px 0;
+}
+.coming-soon img{
+  width: 100%;
+}
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-content{
+  max-width: 530px;
+  padding: 0 15px;
+}
+ .left-heading{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  padding-bottom: 50px;
+  margin-top: 0;
+ }
+ .left-heading em{
+  color: #f5a425;
+  font-style: normal;
+ }
+ .timer{
+  display: flex;
+  column-gap: 20px;
+ }
+ .days{
+  height: 130px;
+  background-color: rgba(250,250,250,0.1);
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 800;
+  width: 22%;
+ }
+ .hours{
+  height: 130px;
+  background-color: rgba(250,250,250,0.1);
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 800;
+  width: 22%;
+ }
+ .minutes{
+  height: 130px;
+  background-color: rgba(250,250,250,0.1);
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 800;
+  width: 22%;
+ }
+ .seconds{
+  height: 130px;
+  background-color: rgba(250,250,250,0.1);
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 800;
+  width: 22%;
+ }
+ .value{
+  margin-top: 15px;
+  width: 100%;
+  display: block;
+
+ }
+ span{
+  font-size: 18px;
+  color: #f5a425;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 0;
+  display: block;
+ }
+ .right-content{
+  max-width: 330px;
+  margin-left: 30px;
+ }
+ .top-right-para{
+  font-size: 13px;
+  color: #fff;
+  background-color: rgba(250,250,250,0.2);
+  text-align: center;
+  padding: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+ }
+ .form{
+  background-color: rgba(250,250,250,0.1);
+  padding: 60px 40px;
+  width: 100%;
+  text-align: center;
+ }
+ .form-control{
+  background-color: rgba(250,250,250,0.1);
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: rgb(255,255,255);
+  letter-spacing: 0.5px;
+  width: 100%;
+  border: none;
+  height: 40px;
+  padding: 6px 12px;
+ }
+ .form-control:focus-visible{
+  border: none;
+  outline: none;
+ }
+ .btn{
+  background-color: #f5a425;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 12px 20px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+
+ }

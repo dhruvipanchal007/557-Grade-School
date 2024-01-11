@@ -644,23 +644,79 @@ span {
   letter-spacing: 0.5px;
   font-weight: 800;
 }
+
 /* courses section */
-.courses{
+.courses {
   background-image: url("https://templatemo.com/templates/templatemo_557_grad_school/assets/images/choosing-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   text-align: center;
+  padding-bottom: 100px;
 }
-.courses-text{
+
+.courses-text {
   padding-bottom: 70px;
 }
-.courses-heading{
+
+.courses-heading {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.5px;
   padding: 15px 20px;
-  border: 2px solid rgba(250,250,250,0.1);
+  border: 2px solid rgba(250, 250, 250, 0.1);
   display: inline-block;
+}
+
+.carousel-card {
+  max-width: 230px;
+  overflow: hidden;
+}
+
+.main-img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+
+}
+
+.card-down-content{
+  padding: 30px;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+.down-content-heading{
+  font-size: 16px;
+  text-transform: uppercase;
+  color:  #1e1e1e;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.down-content-para{
+  font-size: 13px;
+  text-align: left;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+.author-img{
+  text-align: left;
+  border: 2px solid #f5a425;
+  border-radius: 50%;
+  display:inline-block ;
+}
+.text-button-free{
+  float:right;
+  display: inline-block;
+}
+.text-button-text{
+  color: #7a7a7a;
+  font-size: 13px;
+  margin: 10px 0;
 }

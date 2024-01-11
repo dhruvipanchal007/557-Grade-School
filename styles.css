@@ -673,6 +673,12 @@ span {
   max-width: 230px;
   overflow: hidden;
 }
+.display{
+  display: flex!important;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 
 .main-img {
   width: 100%;
@@ -714,9 +720,72 @@ span {
 .text-button-free{
   float:right;
   display: inline-block;
+  color: #f5a425;
 }
 .text-button-text{
   color: #7a7a7a;
   font-size: 13px;
   margin: 10px 0;
+}
+.flex{
+  display: flex!important;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+/* video */
+.video{
+  background-image: url("https://templatemo.com/templates/templatemo_557_grad_school/assets/images/video-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.left-side{
+  max-width: 500px;
+  text-align: left;
+  padding: 0 20px;
+
+}
+.left-side-heading{
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+.heading{
+  margin-top: 20px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.heading em{
+  color: #f5a425;
+  font-style: normal;
+}
+.left-side-para{
+  font-size: 13px;
+  line-height: 22px;
+  color: #fff;
+
+}
+.url-btn{
+  background-color: #f5a425;
+  color: #fff;
+  padding: 12px 20px;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -121,11 +121,11 @@ body {
   }
 
   #check:checked~#checkbtn #menu-icon {
-    display: block;
+    display: none;
   }
 
   #check:checked~#checkbtn #close-icon {
-    display: none;
+    display: block;
 
   }
 
@@ -337,7 +337,7 @@ body {
   padding: 10px 40px;
 }
 
-.d-grid {
+.cards{
   display: flex;
   position: absolute;
   bottom: 5px;
@@ -461,7 +461,7 @@ li {
 .tabs-content-image {
   max-width: 500px;
   padding: 0;
-  15px
+  
 }
 
 .tabs-content-image img {
@@ -628,7 +628,11 @@ span {
   padding: 6px 12px;
 }
 
-.form-control:focus-visible {
+input:focus-visible {
+  border: none;
+  outline: none;
+}
+textarea:focus-visible{
   border: none;
   outline: none;
 }
@@ -750,9 +754,15 @@ span {
   padding-bottom: 70px;
   text-align: center;
 }
+.d-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.video-img{
+  height: 90%;
+}
 
 .left-side {
-  max-width: 500px;
   text-align: left;
   padding: 0 20px;
 
@@ -804,7 +814,18 @@ span {
   justify-content: center;
   align-items: center;
 }
-
+.right-video-img{
+  position: relative;
+}
+.video-caption{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(250,250,250,0.75);
+  height: 80px;
+  width: 100%;
+  padding: 27px 30px;
+  margin: 0;
+}
 /* contact */
 .contact {
   background-image: url("https://templatemo.com/templates/templatemo_557_grad_school/assets/images/contact-bg.jpg");
@@ -850,7 +871,7 @@ span {
   padding-left: 10px;
 }
 
-.width {}
+
 
 .contact-part {
   display: grid;
@@ -886,4 +907,25 @@ span {
   font-weight: 700;
   border: none;
   float: left;
+}
+/* footer */
+.footer{
+  background-color: #152036;
+  text-align: center;
+}
+.footer-text{
+  margin: 0;
+  padding: 25px 0;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.footer-text i{
+  padding-right: 5px;
+}
+.footer-text em{
+  color: #f5a425;
+  font-style: normal;
 }

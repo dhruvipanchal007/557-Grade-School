@@ -759,7 +759,7 @@ textarea:focus-visible {
   text-align: center;
 }
 
-.d-grid {
+.video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -855,6 +855,11 @@ textarea:focus-visible {
 .play-btn i{
   color: #fff;
   font-size: 40px;
+}
+@media (max-width:780px){
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
 }
 /* contact */
 .contact {

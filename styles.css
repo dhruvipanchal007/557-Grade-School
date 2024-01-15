@@ -771,6 +771,7 @@ textarea:focus-visible {
 .left-side {
   text-align: left;
   padding: 0 20px;
+  max-width: 600px;
 
 }
 
@@ -855,10 +856,15 @@ textarea:focus-visible {
 .play-btn i{
   color: #fff;
   font-size: 40px;
+
+}
+.right-side{
+  max-width: 600px;
 }
 @media (max-width:780px){
   .video-grid{
     grid-template-columns: 1fr;
+    grid-row-gap: 20px;
   }
 }
 /* contact */

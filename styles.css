@@ -193,6 +193,13 @@ body {
   .logo {
     padding-left: 20px;
   }
+  .menu-dropdown{
+    visibility: visible;
+    width: 100%;
+  }
+  .menu-dropdown li{
+    width: 100%;
+  }
 
 }
 @media (max-width:1070px){

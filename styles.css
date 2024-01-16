@@ -555,8 +555,7 @@ li {
 .coming-soon img {
   width: 100%;
 }
-
-.soon-2 {
+.coming-soon-content{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -564,6 +563,8 @@ li {
 .left-content {
   max-width: 530px;
   padding: 30px 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .left-heading {
@@ -703,12 +704,18 @@ textarea:focus-visible {
   letter-spacing: 0.5px;
   font-weight: 800;
 }
-
-@media (max-width:780px) {
-  .soon-2 {
+@media(max-width:995px){
+  span{
+    font-size: 14px!important;
+  }
+  .timer{
+    column-gap: 10px;
+  }
+  .coming-soon-content{
     grid-template-columns: 1fr;
   }
 }
+
 
 /* courses section */
 .courses {

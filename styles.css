@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  background-color: rgba(22, 34, 57, 0.95);
+  background-color:#18233a;
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -45,6 +45,9 @@ body {
   text-align: center;
   padding-right: 50px;
 }
+.navbar li{
+  position: relative;
+}
 
 .menu {
   text-decoration: none;
@@ -72,8 +75,32 @@ body {
 }
 
 .menu-dropdown {
+  width: 160px;
+  position: absolute;
+  background-color: #18233a;
+  padding: 0;
+  top: 50%;
+  top: 48px;
+  visibility: hidden;
+  transition: all ease 0.5s;
+  
 }
-
+.menu-dropdown li{
+  line-height: 20px;
+  padding:15px 0;
+  border-bottom: 1px solid #121b2f;
+}
+.sub-menu{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.menu-dropdown li:hover .sub-menu{
+  color: #f5a425;
+}
+.navbar li:hover .menu-dropdown{
+  visibility: visible;
+}
 #checkbtn {
   margin-top: auto;
   margin-bottom: auto;
@@ -167,6 +194,12 @@ body {
     padding-left: 20px;
   }
 
+}
+@media (max-width:1070px){
+  .about{
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /* main-banner */
@@ -706,7 +739,7 @@ textarea:focus-visible {
 }
 @media(max-width:995px){
   span{
-    font-size: 14px!important;
+    font-size: 12px!important;
   }
   .timer{
     column-gap: 10px;

@@ -187,17 +187,15 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
-.image-overlay {
-  height: 100%;
-}
+
 
 .bg-image {
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 
@@ -213,6 +211,7 @@ body {
   text-align: center;
 
 }
+
 
 .text-heading-1 {
   color: #fff;
@@ -265,7 +264,7 @@ body {
   display: grid;
   grid-column-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-
+  height: fit-content;
 
 }
 
@@ -382,7 +381,7 @@ body {
   }
 }
 
-@media (max-width:992px) {
+@media (max-width:995px) {
   .info-container {
     grid-template-columns: 1fr;
     width: 100%;
@@ -391,7 +390,7 @@ body {
   .cards {
     position: relative;
   }
-
+  
   .course-card {
     width: 100%;
     max-width: 100%;
@@ -399,17 +398,15 @@ body {
 
   .virtual-card {
     width: 100%;
+    max-width: 100%;
   }
 
   .meeting-card {
     width: 100%;
+    max-width: 100%;
   }
 
-  .bg-text {
-    display: block;
-    top: 20%;
-  }
-
+ 
 }
 
 @media (max-width:762px) {
@@ -423,14 +420,7 @@ body {
   }
 }
 
-@media(max-width:992px) {
-  .d-grid {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
 
-
-}
 
 /* section why us */
 .why-us {

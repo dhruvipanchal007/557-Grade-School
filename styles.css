@@ -187,7 +187,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .image-overlay {
@@ -250,32 +250,166 @@ body {
   font-size: 24px;
 }
 
-.card-text {
+.cards {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.info-container {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+.card-para {
+  font-size: 13px;
+  line-height: 22px;
+
+}
+
+
+
+/* card 1 */
+.course-card {
+  background-color: #0c1228;
+  color: #fff;
+  padding: 40px;
+  max-width: 300px;
+}
+
+.course-card-text {
+
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+
+
+
 }
 
-.card-hide-1 {
+.course-card-hide {
   display: none;
-  transition: all ease 0.5s;
 }
 
-.card-hide-2 {
-  display: none;
-  transition: all ease 0.5s;
+.course-card:hover .course-card-hide {
+  display: block;
 }
 
-.card-hide-3 {
+.course-card:hover {
+  background-color: #f5a425;
+}
+
+/* card-2 */
+.virtual-card {
+  background-color: #0c1228;
+  color: #fff;
+  padding: 40px;
+  max-width: 300px
+}
+
+.virtual-card-text {
+
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+
+}
+
+.virtual-card-hide {
   display: none;
-  transition: all ease 0.5s;
+}
+
+.virtual-card:hover .virtual-card-hide {
+  display: block;
+}
+
+.virtual-card:hover {
+  background-color: #f5a425;
+}
+
+
+/* card-3 */
+.meeting-card {
+  background-color: #0c1228;
+  color: #fff;
+  padding: 40px;
+  max-width: 300px;
+}
+
+.meeting-card-text {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+
+.meeting-card-hide {
+  display: none;
+}
+
+.meeting-card:hover .meeting-card-hide {
+  display: block;
+}
+
+.meeting-card:hover {
+  background-color: #f5a425;
+}
+
+
+
+
+.btn {
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 @media (max-width:1000px) {
   .text-heading-2 {
     font-size: 50px;
   }
+}
+
+@media (max-width:992px) {
+  .info-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .cards {
+    position: relative;
+  }
+
+  .course-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .virtual-card {
+    width: 100%;
+  }
+
+  .meeting-card {
+    width: 100%;
+  }
+
+  .bg-text {
+    display: block;
+    top: 20%;
+  }
+
 }
 
 @media (max-width:762px) {
@@ -289,105 +423,13 @@ body {
   }
 }
 
-/* card 1 */
-.card-1 {
-  background-color: #0c1228;
-  color: #fff;
-  padding: 40px;
-  width: 300px;
-}
-
-.card-1:hover .card-hide-1 {
-  display: block;
-}
-
-.card-1:hover {
-  background-color: #f5a425;
-  padding: 10px 40px;
-}
-
-/* card-2 */
-.card-2 {
-  background-color: #0c1228;
-  color: #fff;
-  padding: 40px;
-  width: 300px;
-}
-
-.card-2:hover .card-hide-2 {
-  display: block;
-}
-
-.card-2:hover {
-  background-color: #f5a425;
-  padding: 10px 40px;
-}
-
-/* card-3 */
-.card-3 {
-  background-color: #0c1228;
-  color: #fff;
-  padding: 40px;
-  width: 300px;
-}
-
-.card-3:hover .card-hide-3 {
-  display: block;
-}
-
-.card-3:hover {
-  background-color: #f5a425;
-  padding: 10px 40px;
-}
-
-.cards {
-  display: flex;
-  position: absolute;
-  bottom: 5px;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-
-
-}
-
-.info-container {
-  display: flex;
-  column-gap: 30px;
-
-
-}
-
-.card-hide p {
-  font-size: 13px;
-
-}
-
-
-.btn {
-  border-bottom: 2px solid #fff;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
 @media(max-width:992px) {
   .d-grid {
     grid-template-columns: 1fr;
     width: 100%;
   }
 
-  .card-1 {
-    width: 100%;
-  }
 
-  .card-2 {
-    width: 100%;
-  }
-
-  .card-3 {
-    width: 100%;
-  }
 }
 
 /* section why us */
@@ -398,10 +440,10 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .why-us-text {
-  padding-top: 100px;
   padding-bottom: 70px;
   text-align: center;
 }
@@ -457,6 +499,7 @@ li {
 
 .tabs-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -493,6 +536,24 @@ li {
   line-height: 28px;
 }
 
+@media (max-width:780px) {
+  .tag {
+    padding: 0;
+  }
+
+  .tabs-content-text {
+    text-align: center;
+  }
+
+  .tabs-content-image img {
+    padding-right: 0;
+  }
+
+  .taglist {
+    padding-left: 20px;
+  }
+}
+
 /* coming soon */
 .coming-soon {
   background-image: url("https://templatemo.com/templates/templatemo_557_grad_school/assets/images/coming-soon-bg.jpg");
@@ -505,15 +566,14 @@ li {
   width: 100%;
 }
 
-.d-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.soon-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .left-content {
   max-width: 530px;
-  padding: 0 15px;
+  padding: 30px 15px;
 }
 
 .left-heading {
@@ -598,8 +658,9 @@ span {
 }
 
 .right-content {
-  max-width: 330px;
-  margin-left: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top-right-para {
@@ -651,6 +712,12 @@ textarea:focus-visible {
   padding: 12px 20px;
   letter-spacing: 0.5px;
   font-weight: 800;
+}
+
+@media (max-width:780px) {
+  .soon-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* courses section */
@@ -762,16 +829,18 @@ textarea:focus-visible {
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
 }
 
 .video-img {
   height: 90%;
+  width: 100%;
 }
 
 .left-side {
   text-align: left;
-  padding: 0 20px;
-  max-width: 600px;
+  padding: 30px;
+  max-width: 500px;
 
 }
 
@@ -853,20 +922,25 @@ textarea:focus-visible {
   justify-content: center;
   align-items: center;
 }
-.play-btn i{
+
+.play-btn i {
   color: #fff;
   font-size: 40px;
 
 }
-.right-side{
-  max-width: 600px;
+
+.right-side {
+  max-width: 500px;
+  padding: 30px;
 }
-@media (max-width:780px){
-  .video-grid{
+
+@media (max-width:780px) {
+  .video-grid {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
   }
 }
+
 /* contact */
 .contact {
   background-image: url("https://templatemo.com/templates/templatemo_557_grad_school/assets/images/contact-bg.jpg");
@@ -894,6 +968,7 @@ textarea:focus-visible {
   max-width: 600px;
   background-color: rgba(250, 250, 250, 0.1);
   padding: 30px;
+  margin: 20px;
 }
 
 .group-form {
@@ -921,10 +996,11 @@ textarea:focus-visible {
 }
 
 .container {
-  max-width: 1140px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .width-50 {
@@ -950,22 +1026,26 @@ textarea:focus-visible {
   border: none;
   float: left;
 }
-#map{
+
+#map {
   max-width: 600px;
+  margin: 20px;
 }
-@media(max-width:780px){
-  .contact-part{
+
+@media(max-width:780px) {
+  .contact-part {
     grid-template-columns: 1fr;
     text-align: center;
     row-gap: 30px;
   }
-  .container{
+
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
- 
+
 }
 
 /* footer */

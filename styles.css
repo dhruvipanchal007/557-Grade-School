@@ -311,7 +311,6 @@ body {
   display: grid;
   grid-column-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  height: fit-content;
 
 }
 
@@ -329,6 +328,7 @@ body {
   color: #fff;
   padding: 40px;
   max-width: 300px;
+  height: fit-content;
 }
 
 .course-card-text {
@@ -359,7 +359,8 @@ body {
   background-color: #0c1228;
   color: #fff;
   padding: 40px;
-  max-width: 300px
+  max-width: 300px;
+  height:fit-content;
 }
 
 .virtual-card-text {
@@ -391,6 +392,7 @@ body {
   color: #fff;
   padding: 40px;
   max-width: 300px;
+  height: fit-content;
 }
 
 .meeting-card-text {

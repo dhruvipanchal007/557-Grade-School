@@ -16,4 +16,20 @@ $('.owl-carousel').owlCarousel({
     }
 })
 console.log('hello')
-const 
+const secondsEle=document.querySelector("#seconds");
+const minutesEle=document.querySelector("#minutes");
+const hoursEle=document.querySelector("#hours");
+const daysEle=document.querySelector("#days");
+
+let counter=0;
+
+setInterval(() => {
+    secondsEle.textContent = counter % 60;
+    const minutes = Math.floor(counter/60);
+    minutesEle.textContent = minutes % 60;
+    const hours = Math.floor (minutes/60);
+    hoursEle.textContent = hours % 24;
+    const days = Math.floor (hours / 24);
+    daysEle.textContent = days;
+    counter++;
+},1000);

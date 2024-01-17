@@ -42,7 +42,7 @@ body {
   padding-right: 20px;
 }
 
-.nav-item {
+.menu-item {
   position: relative;
   float: left;
 }
@@ -91,7 +91,7 @@ body {
   color: #f5a425;
 }
 
-.nav-item:hover .dropdown {
+.menu-item:hover .dropdown {
   display: block;
 }
 

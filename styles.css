@@ -70,14 +70,13 @@ body {
 }
 
 .menu-dropdown {
-  top: 70px;
-  visibility: hidden;
+  top: 100%;
   position: absolute;
-  right: 23%;
   padding: 0;
   background-color: #18233a;
   width: 160px;
   transition: all ease 0.5s;
+  display: block;
 }
 
 .menu-dropdown li {
@@ -102,7 +101,7 @@ body {
 }
 
 .navbar li:hover .menu-dropdown {
-  /* visibility: visible; */
+/* display: block; */
 }
 
 #close-icon {
@@ -204,7 +203,9 @@ body {
 
   .menu-dropdown {
     width: 100%;
+    position: relative;
   }
+  
 
 
 }
@@ -360,7 +361,7 @@ body {
   color: #fff;
   padding: 40px;
   max-width: 300px;
-  height:fit-content;
+  height: fit-content;
 }
 
 .virtual-card-text {

@@ -90,6 +90,9 @@ body {
 .sub-menu:hover {
   color: #f5a425;
 }
+#checkbtn{
+  display: none;
+}
 
 .menu-item:hover .dropdown {
   display: block;
@@ -101,11 +104,16 @@ body {
 #close-icon{
   display: none;
   font-size: 40px;
+  margin-right: 20px;
 }
 .menu:hover{
   border: 2px solid #f5a425;
 }
 @media(max-width:940px){
+  .logo{
+    padding: 30px;
+    font-size: 30px;
+  }
   #menu-icon{
     display: block;
     margin-right: 20px;
@@ -137,10 +145,10 @@ body {
   #checkbtn:checked~.navbar{
     display: block;
   }
-  #checkbtn:checked~#menu-icon{
+  #checkbtn:checked~ label #menu-icon{
     display: none;
   }
-  #checkbtn:checked~#close-icon{
+  #checkbtn:checked~ label #close-icon{
     display: block;
   }
   

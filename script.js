@@ -15,3 +15,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+console.log('hello')
+const 

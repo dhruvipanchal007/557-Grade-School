@@ -102,10 +102,48 @@ body {
   display: none;
   font-size: 40px;
 }
+.menu:hover{
+  border: 2px solid #f5a425;
+}
 @media(max-width:940px){
   #menu-icon{
     display: block;
+    margin-right: 20px;
   }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #18233a;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    display: none;
+
+  }
+  .menu-item{
+    float: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.25);
+    
+  }
+  .dropdown{
+    position: relative;
+    width: 100%;
+  }
+  .menu:hover{
+    border: 1px solid transparent;
+  }
+  #checkbtn:checked~.navbar{
+    display: block;
+  }
+  #checkbtn:checked~#menu-icon{
+    display: none;
+  }
+  #checkbtn:checked~#close-icon{
+    display: block;
+  }
+  
 }
 
 

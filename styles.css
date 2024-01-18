@@ -49,8 +49,7 @@ body {
   transition: all ease 2s;
   display: flex;
   align-items: center;
-  /* position: relative; */
-  /* float: left; */
+  justify-content: center;
 }
 
 #sub-menu1 {
@@ -76,9 +75,8 @@ body {
 
 .dropdown {
   transition: all ease 2s;
-  /* position: absolute; */
-  /* left: 0px; */
-  /* top: calc(80px - 22px); */
+  position: absolute;
+  top:100%;
   width: 160px;
   background-color: rgb(24, 35, 58);
   display: none;
@@ -264,6 +262,7 @@ body {
   display: grid;
   grid-column-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
 
 }
 
